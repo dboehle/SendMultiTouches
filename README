@@ -1,0 +1,30 @@
+Hello!
+
+This has only been tested using OSX Lion on the latest MacBook Air.
+It will probably work on almost all recent MacBooks, and possibly Macs
+using a Magic Trackpad, on most recent versions of OSX.
+
+This also probably requires some developer tools.
+
+
+In order to compile and run the demos, just expand enter this directory
+in the command line and run the command "make". If the command doesn't
+work, then you might not have the developer tools installed. If it
+didn't work for some other reason, I don't know why!
+
+If you do have it working, though, you can run the multitouch OSC sender
+with the command "./sendMultiTouches". Optionally, append "-v" to output
+the messages it's sending, and "-p PORTNUM" to send them to a port other
+than the default, which is 9189.
+
+Run the test receiver using "./testReceiver" to test that the OSC messages
+are being sent and received correctly on port 9189.
+
+Right now, the messages take the format:
+
+address i32 f       f       f       f
+/finger	id  xpos    ypos    xvel    yvel
+
+If you want to add more parameters they are pretty transparent in the code.
+
+Have fun!
