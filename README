@@ -23,10 +23,10 @@ didn't work for some other reason, I don't know why!
 If you do have it working, though, you can run the multitouch OSC sender
 with the command "./sendMultiTouches". Optionally, append "-v" to output
 the messages it's sending, and "-p PORTNUM" to send them to a port other
-than the default, which is 9189.
+than the default, which is 9109.
 
 Run the test receiver using "./testReceiver" to test that the OSC messages
-are being sent and received correctly on port 9189.
+are being sent and received correctly on port 9109.
 
 Right now, the messages take the format:
 
