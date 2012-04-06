@@ -30,9 +30,14 @@ are being sent and received correctly on port 9109.
 
 Right now, the messages take the format:
 
-address i32 f       f       f       f
-/finger	id  xpos    ypos    xvel    yvel
+For verbosity level 1:
+address i32 f       f
+/finger	id  xpos    ypos
 
-If you want to add more parameters they are pretty transparent in the code.
+For verbosity level 2/3:
+address i32 f       f       f       f		f		f		f		i		i		f
+/finger	id  xpos    ypos    xvel    yvel    angle   AXIS    axis    frame#  state   size
+
+If you want to change the parameters they are pretty transparent in the code.
 
 Have fun!

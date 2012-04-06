@@ -44,7 +44,7 @@ void MTDeviceStart(MTDeviceRef, int); // thanks comex
 
 UdpSocket sock;
 PacketWriter pw;
-bool verbose;
+int verbosity;
 
 int callback(int device, Finger *data, int nFingers, double timestamp, int frame) {
 	for (int i=0; i<nFingers; i++) {
@@ -55,14 +55,22 @@ int callback(int device, Finger *data, int nFingers, double timestamp, int frame
 		msg.pushInt32(f->identifier);
 		msg.pushFloat(f->normalized.pos.x);
 		msg.pushFloat(f->normalized.pos.y);
-		msg.pushFloat(f->normalized.vel.x);
-		msg.pushFloat(f->normalized.vel.y);
-		msg.pushInt32(f->frame);
+
+		if (verbosity > 1) {
+			msg.pushFloat(f->normalized.vel.x);
+			msg.pushFloat(f->normalized.vel.y);
+			msg.pushFloat(f->angle * 90.0f / atan2(1, 0));
+			msg.pushFloat(f->majorAxis);
+			msg.pushFloat(f->minorAxis);
+			msg.pushInt32(f->frame);
+			msg.pushInt32(f->state);
+			msg.pushFloat(f->size);
+		}
 		
 		pw.init().addMessage(msg);
 		sock.sendPacket(pw.packetData(), pw.packetSize());
 		
-		if (verbose) {
+		if (verbosity > 2) {
 			printf("Frame %7d: Angle %6.2f, ellipse %6.3f x%6.3f; "
 			   "position (%6.3f,%6.3f) vel (%6.3f,%6.3f) "
 			   "ID %d, state %d [%d %d?] size %6.3f, %6.3f?\n",
@@ -85,13 +93,28 @@ int callback(int device, Finger *data, int nFingers, double timestamp, int frame
 int main(int argc, char** argv) {
 	
 	short portNum = DEFAULT_PORT_NUM;
-	verbose = false;
+	verbosity = 1;
 	
 	if (argc > 1) {
 		for (int i = 1; i < argc;) {
-			if (strcmp(argv[i], "-v") == 0) {
-				verbose = true;
-				i++;
+			if (strcmp(argv[i], "-h") == 0) {
+				std::cerr << "Usage: sendMultiTouches [-p PORTNUM] [-v VERBOSITY]\n" <<
+				"PORTNUM is the port on which sendMultiTouches will send OSC packets.\n" <<
+				"VERBOSITY is the level of verbosity;\n" <<
+				"\t1: Only send finger id and position\n" <<
+				"\t2: Send finger id, position, velocity, angle, axes, frame, state, and size\n" <<
+				"\t3: Send the above, but also log everything to stdout\n" << std::endl;
+				return 0;
+			}
+			else if (strcmp(argv[i], "-v") == 0) {
+				if (i + 1 < argc) {
+					verbosity = atoi(argv[i + 1]);
+					i += 2;
+				}
+				else {
+					std::cerr << "Error: must specify the verbosity after supplying the -v flag." << std::endl;
+					return 1;
+				}
 			}
 			else if (strcmp(argv[i], "-p") == 0) {
 				if (i + 1 < argc) {
@@ -106,7 +129,7 @@ int main(int argc, char** argv) {
 		}
 	}
 	
-	std::cout << "Sending messages on port " << portNum << ", verbosely logging messages: " << std::boolalpha << verbose << std::endl;
+	std::cout << "Sending messages on port " << portNum << ", verbosity level: " << verbosity << std::endl;
 	
 	sock.connectTo("localhost", portNum);
 	if (!sock.isOk()) {
