@@ -1,2 +1,4 @@
 sendMultiTouches
 testReceiver
+bin-debug
+.DS_Store

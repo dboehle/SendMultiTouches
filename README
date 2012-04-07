@@ -8,6 +8,8 @@ http://steike.com/code/multitouch/
 Thanks guys!
 
 ------------------------------------------------------------------------
+sendMultiTouches code
+------------------------------------------------------------------------
 
 This has only been tested using OSX Lion on the latest MacBook Air.
 It will probably work on almost all recent MacBooks, and possibly Macs
@@ -41,3 +43,39 @@ address i32 f       f       f       f		f		f		f		i		i		f
 If you want to change the parameters they are pretty transparent in the code.
 
 Have fun!
+
+
+------------------------------------------------------------------------
+Examples
+------------------------------------------------------------------------
+
+Right now there are examples for Unity3D, Processing, and Flash.
+
+
+The Unity demo is packaged for Unity 3.5, and you can import it into a blank
+project to see the demo at work. It reads OSC signals off the default
+sendMultiTouches port (9109), and shows two sprites on the screen to represent
+the detected finger positions. It was originally developed for easier
+prototyping for touchscreen devices, so it didn't seem very useful to implement
+an arbitrary number of fingers. The other two examples are more geared for that.
+
+
+The Processing demo uses the oscP5 library to receive the OSC messages, and
+it just draws ellipses to the screen to represent all the current touches.
+There is a dictionary from finger ID to finger information, where each
+entry exists as long as the finger is held down.
+
+
+The Flash demo follows the same principle as the Processing demo, but it is more
+challenging to run. Because Flash doesn't natively support UDP, it must connect
+via TCP to flosc, which is a Java proxy of sorts that listens for the OSC messages,
+then sends them via TCP in XML form to the Flash client.
+
+In order to run the Flash demo, you must first start flosc by navigating to the
+flosc-0.3.1 folder, then running the command:
+	java Gateway OSC_PORT TCP_PORT
+Where the default values for OSC_PORT and TCP_PORT are 9109 and 9110, respectively.
+
+Once you run the flosc server, you can then run the Flash demo.
+
+------------------------------------------------------------------------
