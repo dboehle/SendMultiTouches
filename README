@@ -37,8 +37,8 @@ address i32 f       f
 /finger	id  xpos    ypos
 
 For verbosity level 2/3:
-address i32 f       f       f       f		f		f		f		i		i		f
-/finger	id  xpos    ypos    xvel    yvel    angle   AXIS    axis    frame#  state   size
+address i32 f     f     f     f     f     f     f     i     i     f
+/finger	id  xpos  ypos  xvel  yvel  angle AXIS  axis  frame state size
 
 If you want to change the parameters they are pretty transparent in the code.
 
