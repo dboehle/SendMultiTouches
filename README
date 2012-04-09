@@ -15,9 +15,13 @@ This has only been tested using OSX Lion on the latest MacBook Air.
 It will probably work on almost all recent MacBooks, and possibly Macs
 using a Magic Trackpad, on most recent versions of OSX.
 
-Download the app from the GitHub Downloads page, and just run it!
+Download the app from the GitHub Downloads page, (or here:
+https://github.com/downloads/dboehle/SendMultiTouches/Send%20Multi%20Touches.app.zip)
+
 You can configure the address and port that it sends OSC messages to,
 and that's about it.
+
+Have fun!
 
 
 ------------------------------------------------------------------------
@@ -50,8 +54,6 @@ address i32 f     f     f     f     f     f     f     i     i     f
 /finger	id  xpos  ypos  xvel  yvel  angle AXIS  axis  frame state size
 
 If you want to change the parameters they are pretty transparent in the code.
-
-Have fun!
 
 
 ------------------------------------------------------------------------
