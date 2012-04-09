@@ -2,3 +2,5 @@ sendMultiTouches
 testReceiver
 bin-debug
 .DS_Store
+*.zip
+*.app

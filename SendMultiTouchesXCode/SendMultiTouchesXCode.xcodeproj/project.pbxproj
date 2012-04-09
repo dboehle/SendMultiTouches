@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E1587D21530B06F0075F9E4 /* CustomView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E1587D11530B06F0075F9E4 /* CustomView.mm */; };
+		7E1587D41530B8150075F9E4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1587D31530B8150075F9E4 /* OpenGL.framework */; };
+		7E8BED761530D5C0004CB5E5 /* MultitouchSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8BED751530D5C0004CB5E5 /* MultitouchSupport.framework */; };
+		7E8BED791530D94E004CB5E5 /* MultiTouchSender.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E8BED781530D94E004CB5E5 /* MultiTouchSender.mm */; };
+		7E8BED7D1532E83E004CB5E5 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7E8BED7C1532E83E004CB5E5 /* Icon.icns */; };
+		7E8BED7F1532EDDB004CB5E5 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8BED7E1532EDDB004CB5E5 /* Preferences.xib */; };
+		7E8BED811532EDF9004CB5E5 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8BED801532EDF8004CB5E5 /* PreferencePanes.framework */; };
+		7EA0A33B1530AB570043D1A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA0A33A1530AB570043D1A3 /* Cocoa.framework */; };
+		7EA0A3451530AB570043D1A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EA0A3431530AB570043D1A3 /* InfoPlist.strings */; };
+		7EA0A3471530AB570043D1A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A3461530AB570043D1A3 /* main.m */; };
+		7EA0A34B1530AB570043D1A3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7EA0A3491530AB570043D1A3 /* Credits.rtf */; };
+		7EA0A34E1530AB570043D1A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0A34D1530AB570043D1A3 /* AppDelegate.m */; };
+		7EA0A3511530AB570043D1A3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA0A34F1530AB570043D1A3 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E05A5C01530D2EE00A880DE /* oscpkt.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = oscpkt.hh; sourceTree = "<group>"; };
+		7E05A5C11530D2EE00A880DE /* udp.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = udp.hh; sourceTree = "<group>"; };
+		7E1587D01530B06F0075F9E4 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		7E1587D11530B06F0075F9E4 /* CustomView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomView.mm; sourceTree = "<group>"; };
+		7E1587D31530B8150075F9E4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		7E8BED751530D5C0004CB5E5 /* MultitouchSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultitouchSupport.framework; path = ../../../../../../../System/Library/PrivateFrameworks/MultitouchSupport.framework; sourceTree = "<group>"; };
+		7E8BED771530D94E004CB5E5 /* MultiTouchSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTouchSender.h; sourceTree = "<group>"; };
+		7E8BED781530D94E004CB5E5 /* MultiTouchSender.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MultiTouchSender.mm; sourceTree = "<group>"; };
+		7E8BED7C1532E83E004CB5E5 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		7E8BED7E1532EDDB004CB5E5 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		7E8BED801532EDF8004CB5E5 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		7EA0A3361530AB570043D1A3 /* SendMultiTouchesXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMultiTouchesXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA0A33A1530AB570043D1A3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7EA0A33D1530AB570043D1A3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7EA0A33E1530AB570043D1A3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7EA0A33F1530AB570043D1A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7EA0A3421530AB570043D1A3 /* SendMultiTouchesXCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SendMultiTouchesXCode-Info.plist"; sourceTree = "<group>"; };
+		7EA0A3441530AB570043D1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7EA0A3461530AB570043D1A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EA0A3481530AB570043D1A3 /* SendMultiTouchesXCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SendMultiTouchesXCode-Prefix.pch"; sourceTree = "<group>"; };
+		7EA0A34A1530AB570043D1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7EA0A34C1530AB570043D1A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EA0A34D1530AB570043D1A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EA0A3501530AB570043D1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EA0A3331530AB570043D1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8BED811532EDF9004CB5E5 /* PreferencePanes.framework in Frameworks */,
+				7E8BED761530D5C0004CB5E5 /* MultitouchSupport.framework in Frameworks */,
+				7E1587D41530B8150075F9E4 /* OpenGL.framework in Frameworks */,
+				7EA0A33B1530AB570043D1A3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E05A5BF1530D2EE00A880DE /* oscpkt */ = {
+			isa = PBXGroup;
+			children = (
+				7E05A5C01530D2EE00A880DE /* oscpkt.hh */,
+				7E05A5C11530D2EE00A880DE /* udp.hh */,
+			);
+			path = oscpkt;
+			sourceTree = "<group>";
+		};
+		7EA0A32B1530AB560043D1A3 = {
+			isa = PBXGroup;
+			children = (
+				7E8BED801532EDF8004CB5E5 /* PreferencePanes.framework */,
+				7E8BED7C1532E83E004CB5E5 /* Icon.icns */,
+				7E8BED751530D5C0004CB5E5 /* MultitouchSupport.framework */,
+				7E1587D31530B8150075F9E4 /* OpenGL.framework */,
+				7EA0A3401530AB570043D1A3 /* SendMultiTouchesXCode */,
+				7EA0A3391530AB570043D1A3 /* Frameworks */,
+				7EA0A3371530AB570043D1A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA0A3371530AB570043D1A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA0A3361530AB570043D1A3 /* SendMultiTouchesXCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EA0A3391530AB570043D1A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA0A33A1530AB570043D1A3 /* Cocoa.framework */,
+				7EA0A33C1530AB570043D1A3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EA0A33C1530AB570043D1A3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EA0A33D1530AB570043D1A3 /* AppKit.framework */,
+				7EA0A33E1530AB570043D1A3 /* CoreData.framework */,
+				7EA0A33F1530AB570043D1A3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7EA0A3401530AB570043D1A3 /* SendMultiTouchesXCode */ = {
+			isa = PBXGroup;
+			children = (
+				7E05A5BF1530D2EE00A880DE /* oscpkt */,
+				7EA0A34C1530AB570043D1A3 /* AppDelegate.h */,
+				7EA0A34D1530AB570043D1A3 /* AppDelegate.m */,
+				7EA0A34F1530AB570043D1A3 /* MainMenu.xib */,
+				7EA0A3411530AB570043D1A3 /* Supporting Files */,
+				7E1587D01530B06F0075F9E4 /* CustomView.h */,
+				7E1587D11530B06F0075F9E4 /* CustomView.mm */,
+				7E8BED771530D94E004CB5E5 /* MultiTouchSender.h */,
+				7E8BED781530D94E004CB5E5 /* MultiTouchSender.mm */,
+				7E8BED7E1532EDDB004CB5E5 /* Preferences.xib */,
+			);
+			path = SendMultiTouchesXCode;
+			sourceTree = "<group>";
+		};
+		7EA0A3411530AB570043D1A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EA0A3421530AB570043D1A3 /* SendMultiTouchesXCode-Info.plist */,
+				7EA0A3431530AB570043D1A3 /* InfoPlist.strings */,
+				7EA0A3461530AB570043D1A3 /* main.m */,
+				7EA0A3481530AB570043D1A3 /* SendMultiTouchesXCode-Prefix.pch */,
+				7EA0A3491530AB570043D1A3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EA0A3351530AB570043D1A3 /* SendMultiTouchesXCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA0A3541530AB570043D1A3 /* Build configuration list for PBXNativeTarget "SendMultiTouchesXCode" */;
+			buildPhases = (
+				7EA0A3321530AB570043D1A3 /* Sources */,
+				7EA0A3331530AB570043D1A3 /* Frameworks */,
+				7EA0A3341530AB570043D1A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendMultiTouchesXCode;
+			productName = SendMultiTouches;
+			productReference = 7EA0A3361530AB570043D1A3 /* SendMultiTouchesXCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EA0A32D1530AB560043D1A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7EA0A3301530AB560043D1A3 /* Build configuration list for PBXProject "SendMultiTouchesXCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7EA0A32B1530AB560043D1A3;
+			productRefGroup = 7EA0A3371530AB570043D1A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EA0A3351530AB570043D1A3 /* SendMultiTouchesXCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA0A3341530AB570043D1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA0A3451530AB570043D1A3 /* InfoPlist.strings in Resources */,
+				7EA0A34B1530AB570043D1A3 /* Credits.rtf in Resources */,
+				7EA0A3511530AB570043D1A3 /* MainMenu.xib in Resources */,
+				7E8BED7D1532E83E004CB5E5 /* Icon.icns in Resources */,
+				7E8BED7F1532EDDB004CB5E5 /* Preferences.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EA0A3321530AB570043D1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA0A3471530AB570043D1A3 /* main.m in Sources */,
+				7EA0A34E1530AB570043D1A3 /* AppDelegate.m in Sources */,
+				7E1587D21530B06F0075F9E4 /* CustomView.mm in Sources */,
+				7E8BED791530D94E004CB5E5 /* MultiTouchSender.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EA0A3431530AB570043D1A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA0A3441530AB570043D1A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7EA0A3491530AB570043D1A3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA0A34A1530AB570043D1A3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7EA0A34F1530AB570043D1A3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA0A3501530AB570043D1A3 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EA0A3521530AB570043D1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7EA0A3531530AB570043D1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7EA0A3551530AB570043D1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendMultiTouchesXCode/SendMultiTouchesXCode-Prefix.pch";
+				INFOPLIST_FILE = "SendMultiTouchesXCode/SendMultiTouchesXCode-Info.plist";
+				PRODUCT_NAME = "Send Multi Touches";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7EA0A3561530AB570043D1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SendMultiTouchesXCode/SendMultiTouchesXCode-Prefix.pch";
+				INFOPLIST_FILE = "SendMultiTouchesXCode/SendMultiTouchesXCode-Info.plist";
+				PRODUCT_NAME = "Send Multi Touches";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EA0A3301530AB560043D1A3 /* Build configuration list for PBXProject "SendMultiTouchesXCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA0A3521530AB570043D1A3 /* Debug */,
+				7EA0A3531530AB570043D1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA0A3541530AB570043D1A3 /* Build configuration list for PBXNativeTarget "SendMultiTouchesXCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA0A3551530AB570043D1A3 /* Debug */,
+				7EA0A3561530AB570043D1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EA0A32D1530AB560043D1A3 /* Project object */;
+}
