@@ -8,14 +8,23 @@ http://steike.com/code/multitouch/
 Thanks guys!
 
 ------------------------------------------------------------------------
-sendMultiTouches code
+Send Multi Touches
 ------------------------------------------------------------------------
 
 This has only been tested using OSX Lion on the latest MacBook Air.
 It will probably work on almost all recent MacBooks, and possibly Macs
 using a Magic Trackpad, on most recent versions of OSX.
 
-This also requires some developer tools, for g++ and make.
+Download the app from the GitHub Downloads page, and just run it!
+You can configure the address and port that it sends OSC messages to,
+and that's about it.
+
+
+------------------------------------------------------------------------
+Source Code / Command Line Version
+------------------------------------------------------------------------
+
+This requires some developer tools, for g++ and make.
 
 In order to compile and run the demos, just expand enter this directory
 in the command line and run the command "make". If the command doesn't
