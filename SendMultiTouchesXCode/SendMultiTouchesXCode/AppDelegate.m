@@ -33,7 +33,8 @@ MultiTouchSender* multiTouchSender;
     
     NSView* topView = [_window contentView];
     CustomView* canvas = (CustomView*)[[topView subviews] objectAtIndex:0];
-    [canvas giveFingerDict:([multiTouchSender getDictPtr])];
+    
+    [canvas giveFingerArray:[multiTouchSender getFingerArray]];
 }
 
 - (IBAction)Connect:(id)sender

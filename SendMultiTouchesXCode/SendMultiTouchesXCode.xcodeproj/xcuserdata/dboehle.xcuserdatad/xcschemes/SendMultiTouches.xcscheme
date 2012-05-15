@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7EA0A3351530AB570043D1A3"
-               BuildableName = "SendMultiTouchesXCode.app"
+               BuildableName = "Send Multi Touches.app"
                BlueprintName = "SendMultiTouchesXCode"
                ReferencedContainer = "container:SendMultiTouchesXCode.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7EA0A3351530AB570043D1A3"
-            BuildableName = "SendMultiTouchesXCode.app"
+            BuildableName = "Send Multi Touches.app"
             BlueprintName = "SendMultiTouchesXCode"
             ReferencedContainer = "container:SendMultiTouchesXCode.xcodeproj">
          </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7EA0A3351530AB570043D1A3"
-            BuildableName = "SendMultiTouchesXCode.app"
+            BuildableName = "Send Multi Touches.app"
             BlueprintName = "SendMultiTouchesXCode"
             ReferencedContainer = "container:SendMultiTouchesXCode.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7EA0A3351530AB570043D1A3"
-            BuildableName = "SendMultiTouchesXCode.app"
+            BuildableName = "Send Multi Touches.app"
             BlueprintName = "SendMultiTouchesXCode"
             ReferencedContainer = "container:SendMultiTouchesXCode.xcodeproj">
          </BuildableReference>

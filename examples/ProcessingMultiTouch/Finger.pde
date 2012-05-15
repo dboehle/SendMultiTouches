@@ -43,20 +43,27 @@ class Finger
     pushMatrix();
     
     translate(absX, absY);
+    
+    pushMatrix();
     rotate(radians(-angle));
     
     // draw the fingerprint
     noStroke();
-    color(0.8);
+    fill(255, 0, 0);
     ellipse(0.0, 0.0, majorAxis * fingerScale * width, minorAxis * fingerScale * width);
     
     // draw an arrow for its direction
     stroke(0.0);
-    color(0.0);
+    fill(0);
     float arrowDist = majorAxis * fingerScale * width * 0.4;
     line(0.0, 0.0, arrowDist, 0.0);
     line(arrowDist, 0.0, 0.75 * arrowDist, 0.25 * arrowDist);
     line(arrowDist, 0.0, 0.75 * arrowDist, -0.25 * arrowDist);
+    
+    popMatrix();
+    
+    fill(255);
+    text(id, 0.0, 0.0);
     
     popMatrix();
   }

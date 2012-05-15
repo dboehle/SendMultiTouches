@@ -24,7 +24,16 @@ typedef struct {
 	float unk2;
 } Finger;
 
+typedef struct {
+    Finger* finger;
+    int sequenceId;
+} MultiTouchFinger;
+
 static const double RELEASE_TIME = 0.05;
+static const float ANGLE_DAMPING = 0.9f;
+static const double FIND_TIME = 0.8f;
+
+static const int MAX_FINGERS = 10;
 
 @interface MultiTouchSender : NSObject
 
@@ -34,6 +43,6 @@ typedef int (*MTContactCallbackFunction)(int,Finger*,int,double,int);
 int callback(int device, Finger *data, int nFingers, double timestamp, int frame);
 - (void) setup: (const char*) targetAddr : (short) targetPort : (int) verboseLevel;
 - (void) configureConnection: (const char*) targetAddr : (short) targetPort;
-- (void*) getDictPtr;
+- (void*) getFingerArray;
 
 @end

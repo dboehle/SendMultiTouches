@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0F01001561D1BF0032628E /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0F00FF1561D1BF0032628E /* ApplicationServices.framework */; };
 		7E1587D21530B06F0075F9E4 /* CustomView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E1587D11530B06F0075F9E4 /* CustomView.mm */; };
 		7E1587D41530B8150075F9E4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1587D31530B8150075F9E4 /* OpenGL.framework */; };
 		7E8BED761530D5C0004CB5E5 /* MultitouchSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8BED751530D5C0004CB5E5 /* MultitouchSupport.framework */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		7E05A5C01530D2EE00A880DE /* oscpkt.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = oscpkt.hh; sourceTree = "<group>"; };
 		7E05A5C11530D2EE00A880DE /* udp.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = udp.hh; sourceTree = "<group>"; };
+		7E0F00FF1561D1BF0032628E /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		7E1587D01530B06F0075F9E4 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		7E1587D11530B06F0075F9E4 /* CustomView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomView.mm; sourceTree = "<group>"; };
 		7E1587D31530B8150075F9E4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -34,7 +36,7 @@
 		7E8BED7C1532E83E004CB5E5 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		7E8BED7E1532EDDB004CB5E5 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		7E8BED801532EDF8004CB5E5 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
-		7EA0A3361530AB570043D1A3 /* SendMultiTouchesXCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMultiTouchesXCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA0A3361530AB570043D1A3 /* Send Multi Touches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Send Multi Touches.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA0A33A1530AB570043D1A3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7EA0A33D1530AB570043D1A3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7EA0A33E1530AB570043D1A3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0F01001561D1BF0032628E /* ApplicationServices.framework in Frameworks */,
 				7E8BED811532EDF9004CB5E5 /* PreferencePanes.framework in Frameworks */,
 				7E8BED761530D5C0004CB5E5 /* MultitouchSupport.framework in Frameworks */,
 				7E1587D41530B8150075F9E4 /* OpenGL.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		7EA0A32B1530AB560043D1A3 = {
 			isa = PBXGroup;
 			children = (
+				7E0F00FF1561D1BF0032628E /* ApplicationServices.framework */,
 				7E8BED801532EDF8004CB5E5 /* PreferencePanes.framework */,
 				7E8BED7C1532E83E004CB5E5 /* Icon.icns */,
 				7E8BED751530D5C0004CB5E5 /* MultitouchSupport.framework */,
@@ -89,7 +93,7 @@
 		7EA0A3371530AB570043D1A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EA0A3361530AB570043D1A3 /* SendMultiTouchesXCode.app */,
+				7EA0A3361530AB570043D1A3 /* Send Multi Touches.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,7 +163,7 @@
 			);
 			name = SendMultiTouchesXCode;
 			productName = SendMultiTouches;
-			productReference = 7EA0A3361530AB570043D1A3 /* SendMultiTouchesXCode.app */;
+			productReference = 7EA0A3361530AB570043D1A3 /* Send Multi Touches.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +268,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -284,7 +288,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -295,10 +299,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SendMultiTouchesXCode/SendMultiTouchesXCode-Prefix.pch";
 				INFOPLIST_FILE = "SendMultiTouchesXCode/SendMultiTouchesXCode-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "Send Multi Touches";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,10 +316,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SendMultiTouchesXCode/SendMultiTouchesXCode-Prefix.pch";
 				INFOPLIST_FILE = "SendMultiTouchesXCode/SendMultiTouchesXCode-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "Send Multi Touches";
 				WRAPPER_EXTENSION = app;
 			};

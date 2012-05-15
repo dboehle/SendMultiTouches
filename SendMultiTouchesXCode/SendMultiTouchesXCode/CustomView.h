@@ -16,6 +16,6 @@
 
 - (void) drawRect: (NSRect) bounds;
 
-- (void) giveFingerDict: (void*) dictPtr;
+- (void) giveFingerArray: (void*)arrayPtr;
 
 @end

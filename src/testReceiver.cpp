@@ -7,15 +7,15 @@ using std::cerr;
 
 using namespace oscpkt;
 
-const int PORT_NUM = 9109;
+const int DEFAULT_PORT_NUM = 9109;
 
-void runServer() {
+void runServer(short portNum) {
 	UdpSocket sock; 
-	sock.bindTo(PORT_NUM);
+	sock.bindTo(portNum);
 	if (!sock.isOk()) {
-		cerr << "Error opening port " << PORT_NUM << ": " << sock.errorMessage() << "\n";
+		cerr << "Error opening port " << portNum << ": " << sock.errorMessage() << "\n";
 	} else {
-		cout << "Server started, will listen to packets on port " << PORT_NUM << std::endl;
+		cout << "Server started, will listen to packets on port " << portNum << std::endl;
 		PacketReader pr;
 		//PacketWriter pw;
 		while (sock.isOk()) {			
@@ -41,13 +41,13 @@ void runServer() {
 	}
 }
 
-void runClient() {
+void runClient(short portNum) {
 	UdpSocket sock;
-	sock.connectTo("localhost", PORT_NUM);
+	sock.connectTo("localhost", portNum);
 	if (!sock.isOk()) {
-		cerr << "Error connection to port " << PORT_NUM << ": " << sock.errorMessage() << "\n";
+		cerr << "Error connection to port " << portNum << ": " << sock.errorMessage() << "\n";
 	} else {
-		cout << "Client started, will send packets to port " << PORT_NUM << std::endl;
+		cout << "Client started, will send packets to port " << portNum << std::endl;
 		int iping = 1;
 		while (sock.isOk()) {
 			Message msg("/ping"); msg.pushInt32(iping);
@@ -74,7 +74,13 @@ int main(int argc, char **argv) {
 		runClient();
 	} else if (argc > 1 && strcmp(argv[1], "--serv") == 0) {
 	*/
-		runServer();
+	short portNum = DEFAULT_PORT_NUM;
+	
+	if (argc > 1) {
+		portNum = atoi(argv[1]);
+	}
+	
+	runServer(portNum);
 	/*} else {
 		cout << "syntax: --serv to run as server, --cli to run as client\n";
 	}*/
