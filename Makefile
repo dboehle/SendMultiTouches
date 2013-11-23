@@ -1,7 +1,7 @@
 all: sendMultiTouches testReceiver
 
 sendMultiTouches: src/sendMultiTouches.mm
-	g++ -F/System/Library/PrivateFrameworks -framework MultitouchSupport $^ -o $@
+	g++ -F/System/Library/PrivateFrameworks -framework MultitouchSupport -framework Foundation $^ -o $@
 testReceiver: src/testReceiver.cpp
 	g++ $^ -o $@
 clean:
