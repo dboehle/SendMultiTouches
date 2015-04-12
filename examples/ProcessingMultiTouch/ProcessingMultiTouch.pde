@@ -7,6 +7,8 @@
 
 import oscP5.*;
 import netP5.*;
+import java.util.Iterator;
+import java.util.Map;
 
 // the object we will be using to handle OSC communication
 OscP5 oscP5;
